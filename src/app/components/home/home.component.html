@@ -1,13 +1,16 @@
-<div>
-    <p>Welcome!</p>
+<div class="toolbar" role="banner">
+  <span>Welcome</span>
 
-    <nav>
-        <ul>
-            <li><a routerLink="/login" routerLinkActive="active" > Login</a></li>
-            <li><a routerLink="/impressum" routerLinkActive="active" > Impressum</a></li>
-            <li><a routerLink="/datenschutz" routerLinkActive="active" > Datenschutz</a></li>
-        </ul>
-    </nav>
-    <router-outlet></router-outlet>
+  <nav>
+    <ul>
+      <li><a routerLink="/login" routerLinkActive="active"> Login</a></li>
+      <li>
+        <a routerLink="/impressum" routerLinkActive="active"> Impressum</a>
+      </li>
+      <li>
+        <a routerLink="/datenschutz" routerLinkActive="active"> Datenschutz</a>
+      </li>
+    </ul>
+  </nav>
+  <router-outlet></router-outlet>
 </div>
-

@@ -8,6 +8,7 @@ import { LoginComponent } from './components/login/login.component';
 import { ImpressumComponent } from './components/impressum/impressum.component';
 import { DatenschutzComponent } from './components/datenschutz/datenschutz.component';
 import { AppComponent } from './app.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -17,13 +18,11 @@ import { AppComponent } from './app.component';
     ImpressumComponent,
     DatenschutzComponent,
     AppComponent,
-    ToDoComponent
+    ToDoComponent,
+    PageNotFoundComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [HomeComponent]
+  bootstrap: [HomeComponent],
 })
-export class AppModule { }
+export class AppModule {}

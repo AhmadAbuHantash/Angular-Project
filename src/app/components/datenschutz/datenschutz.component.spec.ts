@@ -8,9 +8,8 @@ describe('DatenschutzComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DatenschutzComponent ]
-    })
-    .compileComponents();
+      declarations: [DatenschutzComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {
