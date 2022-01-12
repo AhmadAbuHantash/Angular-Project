@@ -1,0 +1,7 @@
+<h2>List of all To Dos</h2>
+
+<table id="tb" class="table table-bordered table-hover table-condensed">
+  <tbody>
+    <app-todo *ngFor="let currentToDo of toDos" [toDo]="currentToDo"></app-todo>
+  </tbody>
+</table>

@@ -1,0 +1,14 @@
+thead,
+tfoot {
+  display: none;
+}
+
+table {
+  background: none !important;
+  margin: auto;
+  border: none !important;
+  width: 100%;
+}
+tbody {
+  text-align: center;
+}

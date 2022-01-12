@@ -9,6 +9,7 @@ import { ImpressumComponent } from './components/impressum/impressum.component';
 import { DatenschutzComponent } from './components/datenschutz/datenschutz.component';
 import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { AllToDosComponent } from './components/all-to-dos/all-to-dos.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     AppComponent,
     ToDoComponent,
     PageNotFoundComponent,
+    AllToDosComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
