@@ -10,3 +10,6 @@ export const toDos = [
   new ToDo(7, false, 'Zähneputzen', new Date()),
   new ToDo(8, false, 'Schlafen', new Date()),
 ];
+export const getNextId = function () {
+  return toDos.length + 1;
+};

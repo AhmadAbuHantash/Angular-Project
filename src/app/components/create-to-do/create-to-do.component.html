@@ -1,0 +1,33 @@
+<div class="container"></div>
+
+<h1>To-Do Form</h1>
+<form (ngSubmit)="onSubmit()" #toDoForm="ngForm">
+  <div class="form-group">
+    <label for="description">Description</label>
+    <input
+      type="text"
+      class="form-control"
+      id="description"
+      required
+      [(ngModel)]="newToDo.description"
+      name="description"
+    />
+  </div>
+
+  <div class="form-group">
+    <div class="input-group">
+      <label for="date">Due Date</label>
+      <input
+        class="form-control"
+        placeholder="dd-mm-yyyy"
+        id="date"
+        required
+        [(ngModel)]="newToDo.date"
+        name="date"
+        type="date"
+        [valueAsDate]="getDateToday()"
+      />
+    </div>
+  </div>
+  <button type="submit" class="btn btn-success" [disabled]="!toDoForm.form.valid">Submit</button>
+</form>

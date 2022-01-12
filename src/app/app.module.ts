@@ -10,6 +10,8 @@ import { DatenschutzComponent } from './components/datenschutz/datenschutz.compo
 import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { AllToDosComponent } from './components/all-to-dos/all-to-dos.component';
+import { CreateToDoComponent } from './components/create-to-do/create-to-do.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,8 +24,9 @@ import { AllToDosComponent } from './components/all-to-dos/all-to-dos.component'
     ToDoComponent,
     PageNotFoundComponent,
     AllToDosComponent,
+    CreateToDoComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [HomeComponent],
 })
